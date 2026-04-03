@@ -4,7 +4,8 @@
 
 
 ### 📊 Architecture Diagram
-![Car Rental Data Pipeline Architecture](credit-card-analysis.png)
+![Car Rental Data Pipeline Architecture](<img width="912" height="425" alt="image" src="https://github.com/user-attachments/assets/30cf5f16-f3f3-46fe-bbb3-873b646a29cb" />
+)
 ## 📌 Project Overview
 
 I built an **end-to-end Credit Card Fraud Detection Pipeline** on **Google Cloud Platform (GCP)** that can process **1M+ daily transactions** efficiently.  
