@@ -12,7 +12,7 @@ default_args = {
     'depends_on_past': False,
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
-    'start_date': datetime(2025, 9, 17),
+    'start_date': datetime(2026,02,25),
 }
 
 # Define the DAG
@@ -45,14 +45,14 @@ with DAG(
     # Task 2: Submit PySpark job to Dataproc Serverless
     batch_details = {
         "pyspark_batch": {
-            "main_python_file_uri": f"gs://credit-card-data-analysis007/spark_job/spark_job.py"
+            "main_python_file_uri": f"gs://credit-card-data-analysis001/spark_job/spark_job.py"
         },
         "runtime_config": {
             "version": "2.2",
         },
         "environment_config": {
             "execution_config": {
-                "service_account": "442571458008-compute@developer.gserviceaccount.com",
+                "service_account": "442571458001-compute@developer.gserviceaccount.com",
                 "network_uri": "projects/analytical-park-467211-t1/global/networks/default",
                 "subnetwork_uri": "projects/analytical-park-467211-t1/regions/us-central1/subnetworks/default",
             }
